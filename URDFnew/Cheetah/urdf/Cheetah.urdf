@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Cheetah">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0079191 -0.1784 -0.25471"
+        rpy="0 0 0" />
+      <mass
+        value="6.9125E-06" />
+      <inertia
+        ixx="7.0792E-07"
+        ixy="-4.6542E-09"
+        ixz="3.5435E-09"
+        iyy="1.2812E-06"
+        iyz="-2.2445E-08"
+        izz="5.7633E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Shoulder_1">
+    <inertial>
+      <origin
+        xyz="-0.581506480977278 0.20423053287058 0.181374939659368"
+        rpy="0 0 0" />
+      <mass
+        value="6.91245341957363E-06" />
+      <inertia
+        ixx="5.76327494791021E-07"
+        ixy="-3.54350257196885E-09"
+        ixz="2.24450358978102E-08"
+        iyy="7.07919613126503E-07"
+        iyz="-4.6541510718604E-09"
+        izz="1.28124715505522E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="S1"
+    type="fixed">
+    <origin
+      xyz="0.21215 -0.3268 0.0029778"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Shoulder_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_1">
+    <inertial>
+      <origin
+        xyz="-0.313121167918053 -0.0840470020508393 -7.21367410250195E-14"
+        rpy="0 0 0" />
+      <mass
+        value="7.10635958497128E-07" />
+      <inertia
+        ixx="4.54533556595649E-11"
+        ixy="3.477390663554E-27"
+        ixz="-5.49299625523495E-26"
+        iyy="9.09055269258654E-11"
+        iyz="4.22953164293911E-27"
+        izz="4.54533556595647E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0.57745 0" />
+    <parent
+      link="Shoulder_1" />
+    <child
+      link="Leg_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Foot_1">
+    <inertial>
+      <origin
+        xyz="1.22230288741587E-05 -0.0331708839529164 -0.000114259958520879"
+        rpy="0 0 0" />
+      <mass
+        value="1.0174773963961E-06" />
+      <inertia
+        ixx="1.33410968543908E-10"
+        ixy="-4.91589432613722E-14"
+        ixz="-1.69332202138811E-16"
+        iyy="2.66818604044167E-10"
+        iyz="4.59534120043545E-13"
+        izz="1.33412533334235E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foot_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foot_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="F1"
+    type="revolute">
+    <origin
+      xyz="-0.31312 -0.050776 0"
+      rpy="-0.0034728 0.076357 -0.00036956" />
+    <parent
+      link="Leg_1" />
+    <child
+      link="Foot_1" />
+    <axis
+      xyz="0.00036848 -0.99999 -0.0034446" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Shoulder_2">
+    <inertial>
+      <origin
+        xyz="-0.581506480977278 -0.220068696429443 0.181936063780987"
+        rpy="0 0 0" />
+      <mass
+        value="6.91245341957363E-06" />
+      <inertia
+        ixx="5.76327494791021E-07"
+        ixy="-3.54350257196885E-09"
+        ixz="2.24450358978102E-08"
+        iyy="7.07919613126503E-07"
+        iyz="-4.6541510718604E-09"
+        izz="1.28124715505522E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="S2"
+    type="fixed">
+    <origin
+      xyz="-0.21215 -0.3268 0.0035389"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Shoulder_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_2">
+    <inertial>
+      <origin
+        xyz="-0.313121167918053 -0.0840470020508394 -3.33066907387547E-16"
+        rpy="0 0 0" />
+      <mass
+        value="7.10635958497131E-07" />
+      <inertia
+        ixx="4.54533556595656E-11"
+        ixy="4.36766645260943E-27"
+        ixz="-5.49299625523495E-26"
+        iyy="9.09055269258662E-11"
+        iyz="-6.31568709729828E-27"
+        izz="4.54533556595648E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.1416 0.58158 0" />
+    <parent
+      link="Shoulder_2" />
+    <child
+      link="Leg_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Foot_2">
+    <inertial>
+      <origin
+        xyz="-2.5686918161405E-06 0.00697092177517811 2.40119387236171E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.01747739639608E-06" />
+      <inertia
+        ixx="1.33410968543909E-10"
+        ixy="-4.91589432612787E-14"
+        ixz="-1.69332202707498E-16"
+        iyy="2.66818604044169E-10"
+        iyz="4.59534120043675E-13"
+        izz="1.33412533334236E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foot_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foot_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="F2"
+    type="revolute">
+    <origin
+      xyz="-0.31312 -0.050076 0"
+      rpy="3.1381 -0.22068 0.00037764" />
+    <parent
+      link="Leg_2" />
+    <child
+      link="Foot_2" />
+    <axis
+      xyz="0.00036848 -0.99999 -0.0034446" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Shoulder_3">
+    <inertial>
+      <origin
+        xyz="-0.0720934965160085 0.220068696429443 0.181374939659368"
+        rpy="0 0 0" />
+      <mass
+        value="6.91245341957363E-06" />
+      <inertia
+        ixx="5.76327494791021E-07"
+        ixy="-3.54350257196885E-09"
+        ixz="-2.24450358978102E-08"
+        iyy="7.07919613126503E-07"
+        iyz="4.65415107186036E-09"
+        izz="1.28124715505522E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="S3"
+    type="fixed">
+    <origin
+      xyz="-0.21215 0.3268 0.0029778"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Shoulder_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_3">
+    <inertial>
+      <origin
+        xyz="-0.313121167918053 -0.0840470020508394 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="7.10635958497125E-07" />
+      <inertia
+        ixx="4.54533556595648E-11"
+        ixy="-2.08448896583657E-28"
+        ixz="8.23949438285242E-26"
+        iyy="9.09055269258656E-11"
+        iyz="-9.19147402476448E-29"
+        izz="4.5453355659565E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L3"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 0.67624 3.1416" />
+    <parent
+      link="Shoulder_3" />
+    <child
+      link="Leg_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Foot_3">
+    <inertial>
+      <origin
+        xyz="-2.56869181658459E-06 0.00697092177517811 2.40119387235338E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.01747739639609E-06" />
+      <inertia
+        ixx="1.33410968543909E-10"
+        ixy="-4.91589432617792E-14"
+        ixz="-1.69332201085448E-16"
+        iyy="2.66818604044167E-10"
+        iyz="4.59534120043267E-13"
+        izz="1.33412533334234E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foot_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foot_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="F3"
+    type="revolute">
+    <origin
+      xyz="-0.31312 -0.050076 0"
+      rpy="3.138 -0.42041 0.00040363" />
+    <parent
+      link="Leg_3" />
+    <child
+      link="Foot_3" />
+    <axis
+      xyz="0.00036848 -0.99999 -0.0034446" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Shoulder_4">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Shoulder_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="S4"
+    type="fixed">
+    <origin
+      xyz="0.21215 0.3268 0.0035389"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="Shoulder_4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg_4">
+    <inertial>
+      <origin
+        xyz="-0.313121167918055 -0.0840470020508348 -3.52495810318487E-15"
+        rpy="0 0 0" />
+      <mass
+        value="7.10635958497115E-07" />
+      <inertia
+        ixx="4.54533556595649E-11"
+        ixy="6.61316662624492E-25"
+        ixz="8.72417052302021E-26"
+        iyy="9.09055269258656E-11"
+        iyz="3.89504676538964E-25"
+        izz="4.54533556595648E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Leg_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L4"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0.64285 -3.1416" />
+    <parent
+      link="Shoulder_4" />
+    <child
+      link="Leg_4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Foor_4">
+    <inertial>
+      <origin
+        xyz="1.22230288743808E-05 -0.0331708839529164 -0.000114259958520768"
+        rpy="0 0 0" />
+      <mass
+        value="1.01747739639607E-06" />
+      <inertia
+        ixx="1.33410968543907E-10"
+        ixy="-4.91589432615305E-14"
+        ixz="-1.69332201479652E-16"
+        iyy="2.66818604044165E-10"
+        iyz="4.59534120043548E-13"
+        izz="1.33412533334233E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foor_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cheetah/meshes/Foor_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="F4"
+    type="revolute">
+    <origin
+      xyz="-0.31312 -0.050776 0"
+      rpy="-0.0034808 0.098008 -0.00037026" />
+    <parent
+      link="Leg_4" />
+    <child
+      link="Foor_4" />
+    <axis
+      xyz="0.00036848 -0.99999 -0.0034446" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
