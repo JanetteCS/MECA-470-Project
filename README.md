@@ -37,15 +37,15 @@ This section focuses on the mini-cheetah simulation environment as distributed b
 ![](Figure/Common_Test_1.png)<br>
 
 ![](Figure/Common_Test_2.png)<br>
-Figure 3. Self-test to test 
+Figure 3. Self-test to test <br>
 
-The next step was to run the simulator, however there was a problem with one of the Qt libraries. This was ultimately discovered to be a not uncommon issue, and it was resolved with a manual install of the specific directory in question. The simulation was successfully launched, howeve,r there is not much to show for the effort. The control panel comes up, and when the simulation is ran a floorspace and a partial build of the selected robot is rendered (Figure 5), but exercising any degree of control over its motionI was unsuccessful. It is suspected that part of the problem may lie with our underpowered computers. It is also worth noting that the mini-cheetah software was written to work with a very specific Logitech control pad, and there were numerous instances where the build process became hung-up on such details. 
+The next step was to run the simulator, however there was a problem with one of the Qt libraries. This was ultimately discovered to be a not uncommon issue, and it was resolved with a manual install of the specific directory in question. The simulation was successfully launched, howeve,r there is not much to show for the effort. The control panel comes up (Figure 4), and when the simulation is ran a floorspace and a partial build of the selected robot is rendered (Figure 5), but exercising any degree of control over its motionI was unsuccessful. It is suspected that part of the problem may lie with our underpowered computers. It is also worth noting that the mini-cheetah software was written to work with a very specific Logitech control pad, and there were numerous instances where the build process became hung-up on such details. 
 
 ![](Figure/Sim_Param.png)<br>
-Figure 4
+Figure 4. Running the control panel<br>
 
 ![](Figure/Sim_Running.png)<br>
-Figure 5
+Figure 5. Simulator<br>
 
 # 4 Conclusion
 
