@@ -8,12 +8,12 @@ The Quadruped project involved using Coppelia to recreate and adding wheels to t
 
 
 ## 2. Design <br>
-##2.1 Coppelia Model
+##2.1 Coppelia Model <br>
 The cheetah (Figure 1) was recreated using solidworks which allowed for proper assembly and prpvided the option ofexporting the model as URDF files that are compatible with Coppelia <br>
 ![](coppelia_cheetah.PNG)<br>
 Figure 1. Imageof cheetah in coppelia<br>
 
 
 # 3 Implementation<br>
-## 3.1 Visual Studio
-Vissual Study was used to ssh into our virtual machine containing ROS. The file named simpleTest.py was used to
+## 3.1 Visual Studio<br>
+Vissual Study (VS) was used to ssh into our virtual machine containing ROS. The file named simpleTest.py was then used to test and verify VS was connecting properly to Coppelia once VS was running our virtual machine.
