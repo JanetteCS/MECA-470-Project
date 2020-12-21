@@ -52,5 +52,5 @@ The files containing this section of the project were too large to be uploaded i
 https://drive.google.com/file/d/1CXyUCXnaTUgVWD4yjwqIVtd4KEj2Uwea/view?usp=sharing
 
 # 4 Conclusion
-
+Finally, although we suceeded in connecting the Linux Virtual Environement with Coppelia on Windows thriugh Visual Studios, and were able to cotrol the cheetah with python files in the virtual environement, we were unable to successfully execute our code using ROS. Many things were learned throughouy the course of the project and we were able to trasnaltea few of the files provided by MIT successfuly.
 
