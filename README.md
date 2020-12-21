@@ -20,7 +20,7 @@ Vissual Study (VS) was used to ssh into the Linux Virtual Environment containing
 
 After verifying the API interface was working, the Coppelia model named, Cheetah_shaky_stabilized_rev_2.ttt was opened in Coppelia and a python file named Python_code.py stored insode the virtual encironment was opned through VS. The simulation was then started in Coppelia before running the python file in VS. The python file was able to control the Coppelia model of the cheetah as shown in the video file named, video_VS - ssh-to-VM-API-Coppelia.mp4
 
-Although the cheetah is being controlled as expected through VS, the model does not move as smoothly as expected. This is due to the model created in Solidworks and converted to URDF files.
+Although the cheetah is being controlled as expected through VS, the model does not move as smoothly as expected. This is due to the model created in Solidworks and converted to URDF files. <br>
 
 
 ## 3.2 Python in ROS <br>
@@ -28,5 +28,7 @@ The second part of the project consisted of adding a new feature to the cheetah 
 ![](ROS_Python.jpg)<br>
 
 ## 3.3 What Nick did<br>
+
+# 4 Conclusion
 
 
