@@ -23,6 +23,6 @@ After verifying the API interface was working, the coppelia model named, Cheetah
 
 ## 3.2 Python in ROS <br>
 
-![](coppelia_cheetah.PNG)<br>
+![](ROS_Python.jpg)<br>
 
 
