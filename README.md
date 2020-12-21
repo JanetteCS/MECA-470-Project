@@ -16,4 +16,4 @@ Figure 1. Imageof cheetah in coppelia<br>
 
 # 3 Implementation<br>
 ## 3.1 Visual Studio<br>
-Vissual Study (VS) was used to ssh into our virtual machine containing ROS. The file named simpleTest.py was then used to test and verify VS was connecting properly to Coppelia once VS was running our virtual machine.
+Vissual Study (VS) was used to ssh into the virtual machine containing ROS for this project. The after connecting VS to the virtual machine, the file named simpleTest.py was used to test and verify VS was connecting properly to Coppelia once VS was connected to the virtual machine. <br>
