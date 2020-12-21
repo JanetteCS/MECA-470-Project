@@ -26,6 +26,9 @@ Although the cheetah is being controlled as expected through VS, the model does 
 ## 3.2 Python in ROS <br>
 The second part of the project consisted of adding a new feature to the cheetah design and controlling it using python on ROS. The team decided to add wheels to the legs of the cheetah to increase its functionality, as with wheels it will be able to move in rougher terrains and at a faster speed. The Coppelia model works correctly as all limbs are connected and joints are moving in their respective direction. The python code is functional as well and it was tested linking the Linux Virtual Environment and Coppelia Sim, through Virtual Studio Code SSH feature and API. However, a problem arose when implementing it using ROS-Kinetic, the problem consists of the "catkin_make" function not determining the linker language for the Python file containing the movement instructions. As shown in Figure 2 below, the error is inside the Cmake file for the "quadruped" package, which contains the file named "motion_node". After doing some research on the matter, it seems that the functions inside the Cmake file are mainly for C and C++ nodes, when using python extra steps are needed. After following steps found online from ROS Answers, the problem remained and no solution was found. In conclusion, the Python file and Coppelia Sim model work and can be connected and controlled by using SSH and API, the ROS implementation was unsuccessful due to the "catkin_make" not being able to determine the language of the file.<br>
 ![](ROS_Python.jpg)<br>
+Figure 2. Image of error encountered<br?
+
+The file contianing the code is named project_catkin_ws.zip
 
 ## 3.3 What Nick did<br>
 
