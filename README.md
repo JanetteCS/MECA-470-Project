@@ -32,14 +32,20 @@ Figure 2. Image of error encountered<br?
 The file contianing the code is named project_catkin_ws.zip
 
 ## 3.3 Mini-Cheetah Simulation Environment<br>
-This section focuses on the mini-cheetah simulation environment as distributed by MIT-Biomimetics on Github. The purpose was to establish an observable baseline and a point of reference for the modifications that would be implemented. The software package and all of the required dependencies were downloaded and installed into the catkin workspace. The bugs were hunted down one-by-one, until each build could run error-free. The final build was checked against the "common library self-test" as shown in Figure 3, as seen in Figgure____ the test was a success. <br>
+This section focuses on the mini-cheetah simulation environment as distributed by MIT-Biomimetics on Github. The purpose was to establish an observable baseline and a point of reference for the modifications that would be implemented. The software package and all of the required dependencies were downloaded and installed into the catkin workspace. The bugs were hunted down one-by-one, until each build could run error-free. The final build was checked against the "common library self-test" as shown in Figure 3, as seen in the figure, the test was a success. <br>
 
 ![](Figure/Common_Test_1.png)<br>
 
 ![](Figure/Common_Test_2.png)<br>
+Figure 3. Self-test to test 
 
-The next step was to run the simulator, however there was a problem with one of the Qt libraries. This was ultimately discovered to be a not uncommon issue, and it was resolved with a manual install of the specific directory in question.
-I was able to successfully launch the simulation, however there is not much to show for the effort. The control panel comes up, and when the simulation is run a floorspace and a partial build of the selected robot is rendered, but I was unsuccessful in exercising any degree of control over its motion. I suspect that part of the problem may lie with my underpowered computer. It is also worth noting that the mini-cheetah software was written to work with a very specific Logitech control pad, and there were numerous instances where the build process became hung-up on such details. 
+The next step was to run the simulator, however there was a problem with one of the Qt libraries. This was ultimately discovered to be a not uncommon issue, and it was resolved with a manual install of the specific directory in question. The simulation was successfully launched, howeve,r there is not much to show for the effort. The control panel comes up, and when the simulation is ran a floorspace and a partial build of the selected robot is rendered (Figure 5), but exercising any degree of control over its motionI was unsuccessful. It is suspected that part of the problem may lie with our underpowered computers. It is also worth noting that the mini-cheetah software was written to work with a very specific Logitech control pad, and there were numerous instances where the build process became hung-up on such details. 
+
+![](Figure/Sim_Param.png)<br>
+Figure 4
+
+![](Figure/Sim_Running.png)<br>
+Figure 5
 
 # 4 Conclusion
 
