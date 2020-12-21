@@ -47,6 +47,10 @@ Figure 4. Running the control panel<br>
 ![](Figure/Sim_Running.png)<br>
 Figure 5. Simulator<br>
 
+The files containing this section of the project were too large to be uploaded in GitHub, thus, they were stored in Google Drive. The link below will direct you yo yhe dowloadable files.
+
+https://drive.google.com/file/d/1CXyUCXnaTUgVWD4yjwqIVtd4KEj2Uwea/view?usp=sharing
+
 # 4 Conclusion
 
 
